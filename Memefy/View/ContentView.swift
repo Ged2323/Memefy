@@ -6,21 +6,24 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     
+    @StateObject var memeListViewModel = MemeListViewModel()
+    
     var body: some View {
         NavigationView {
-            List (0..<MemeModel.dummtData.count){index in
+            List (memeListViewModel.memesData, id: \.id) { meme in
                 NavigationLink (destination:
-                                    DetailView(image: MemeModel.dummtData[index].title, imageTitle: MemeModel.dummtData[index].name),
+                                    DetailView(imageURL: "\(meme.url)", imageTitle: meme.name),
                 label: {
                     ZStack {
-                        Image(MemeModel.dummtData[index].title)
+                        KFImage(URL(string: "\(meme.url)"))
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                        Text("\(MemeModel.dummtData[index].name)")
+                        Text("\(meme.name)")
                             .font(.title3).bold()
                             .padding()
                             .background(Color.red)
@@ -29,6 +32,9 @@ struct ContentView: View {
                 })
             }
                 .navigationBarTitle("Memefy" ,displayMode: .inline)
+        }
+        .onAppear {
+            memeListViewModel.fetchAPIdata()
         }
     }
 }
