@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFAF366226302C3D00F7D4CF /* MemefyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF366126302C3D00F7D4CF /* MemefyApp.swift */; };
+		BFAF366426302C3D00F7D4CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF366326302C3D00F7D4CF /* ContentView.swift */; };
+		BFAF366626302C3F00F7D4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFAF366526302C3F00F7D4CF /* Assets.xcassets */; };
+		BFAF366926302C3F00F7D4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFAF366826302C3F00F7D4CF /* Preview Assets.xcassets */; };
+		BFAF367426302C3F00F7D4CF /* MemefyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF367326302C3F00F7D4CF /* MemefyTests.swift */; };
+		BFAF367F26302C3F00F7D4CF /* MemefyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF367E26302C3F00F7D4CF /* MemefyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFAF367026302C3F00F7D4CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFAF365626302C3D00F7D4CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFAF365D26302C3D00F7D4CF;
+			remoteInfo = Memefy;
+		};
+		BFAF367B26302C3F00F7D4CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFAF365626302C3D00F7D4CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFAF365D26302C3D00F7D4CF;
+			remoteInfo = Memefy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFAF365E26302C3D00F7D4CF /* Memefy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memefy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAF366126302C3D00F7D4CF /* MemefyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemefyApp.swift; sourceTree = "<group>"; };
+		BFAF366326302C3D00F7D4CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFAF366526302C3F00F7D4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFAF366826302C3F00F7D4CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFAF366A26302C3F00F7D4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFAF366F26302C3F00F7D4CF /* MemefyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemefyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAF367326302C3F00F7D4CF /* MemefyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemefyTests.swift; sourceTree = "<group>"; };
+		BFAF367526302C3F00F7D4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFAF367A26302C3F00F7D4CF /* MemefyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemefyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAF367E26302C3F00F7D4CF /* MemefyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemefyUITests.swift; sourceTree = "<group>"; };
+		BFAF368026302C3F00F7D4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFAF365B26302C3D00F7D4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFAF366C26302C3F00F7D4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFAF367726302C3F00F7D4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFAF365526302C3D00F7D4CF = {
+			isa = PBXGroup;
+			children = (
+				BFAF366026302C3D00F7D4CF /* Memefy */,
+				BFAF367226302C3F00F7D4CF /* MemefyTests */,
+				BFAF367D26302C3F00F7D4CF /* MemefyUITests */,
+				BFAF365F26302C3D00F7D4CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFAF365F26302C3D00F7D4CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF365E26302C3D00F7D4CF /* Memefy.app */,
+				BFAF366F26302C3F00F7D4CF /* MemefyTests.xctest */,
+				BFAF367A26302C3F00F7D4CF /* MemefyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFAF366026302C3D00F7D4CF /* Memefy */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF366126302C3D00F7D4CF /* MemefyApp.swift */,
+				BFAF366326302C3D00F7D4CF /* ContentView.swift */,
+				BFAF366526302C3F00F7D4CF /* Assets.xcassets */,
+				BFAF366A26302C3F00F7D4CF /* Info.plist */,
+				BFAF366726302C3F00F7D4CF /* Preview Content */,
+			);
+			path = Memefy;
+			sourceTree = "<group>";
+		};
+		BFAF366726302C3F00F7D4CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF366826302C3F00F7D4CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFAF367226302C3F00F7D4CF /* MemefyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF367326302C3F00F7D4CF /* MemefyTests.swift */,
+				BFAF367526302C3F00F7D4CF /* Info.plist */,
+			);
+			path = MemefyTests;
+			sourceTree = "<group>";
+		};
+		BFAF367D26302C3F00F7D4CF /* MemefyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF367E26302C3F00F7D4CF /* MemefyUITests.swift */,
+				BFAF368026302C3F00F7D4CF /* Info.plist */,
+			);
+			path = MemefyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFAF365D26302C3D00F7D4CF /* Memefy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFAF368326302C3F00F7D4CF /* Build configuration list for PBXNativeTarget "Memefy" */;
+			buildPhases = (
+				BFAF365A26302C3D00F7D4CF /* Sources */,
+				BFAF365B26302C3D00F7D4CF /* Frameworks */,
+				BFAF365C26302C3D00F7D4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memefy;
+			productName = Memefy;
+			productReference = BFAF365E26302C3D00F7D4CF /* Memefy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFAF366E26302C3F00F7D4CF /* MemefyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFAF368626302C3F00F7D4CF /* Build configuration list for PBXNativeTarget "MemefyTests" */;
+			buildPhases = (
+				BFAF366B26302C3F00F7D4CF /* Sources */,
+				BFAF366C26302C3F00F7D4CF /* Frameworks */,
+				BFAF366D26302C3F00F7D4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFAF367126302C3F00F7D4CF /* PBXTargetDependency */,
+			);
+			name = MemefyTests;
+			productName = MemefyTests;
+			productReference = BFAF366F26302C3F00F7D4CF /* MemefyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFAF367926302C3F00F7D4CF /* MemefyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFAF368926302C3F00F7D4CF /* Build configuration list for PBXNativeTarget "MemefyUITests" */;
+			buildPhases = (
+				BFAF367626302C3F00F7D4CF /* Sources */,
+				BFAF367726302C3F00F7D4CF /* Frameworks */,
+				BFAF367826302C3F00F7D4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFAF367C26302C3F00F7D4CF /* PBXTargetDependency */,
+			);
+			name = MemefyUITests;
+			productName = MemefyUITests;
+			productReference = BFAF367A26302C3F00F7D4CF /* MemefyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFAF365626302C3D00F7D4CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BFAF365D26302C3D00F7D4CF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BFAF366E26302C3F00F7D4CF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BFAF365D26302C3D00F7D4CF;
+					};
+					BFAF367926302C3F00F7D4CF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BFAF365D26302C3D00F7D4CF;
+					};
+				};
+			};
+			buildConfigurationList = BFAF365926302C3D00F7D4CF /* Build configuration list for PBXProject "Memefy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFAF365526302C3D00F7D4CF;
+			productRefGroup = BFAF365F26302C3D00F7D4CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFAF365D26302C3D00F7D4CF /* Memefy */,
+				BFAF366E26302C3F00F7D4CF /* MemefyTests */,
+				BFAF367926302C3F00F7D4CF /* MemefyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFAF365C26302C3D00F7D4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAF366926302C3F00F7D4CF /* Preview Assets.xcassets in Resources */,
+				BFAF366626302C3F00F7D4CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFAF366D26302C3F00F7D4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFAF367826302C3F00F7D4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFAF365A26302C3D00F7D4CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAF366426302C3D00F7D4CF /* ContentView.swift in Sources */,
+				BFAF366226302C3D00F7D4CF /* MemefyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFAF366B26302C3F00F7D4CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAF367426302C3F00F7D4CF /* MemefyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFAF367626302C3F00F7D4CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAF367F26302C3F00F7D4CF /* MemefyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFAF367126302C3F00F7D4CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFAF365D26302C3D00F7D4CF /* Memefy */;
+			targetProxy = BFAF367026302C3F00F7D4CF /* PBXContainerItemProxy */;
+		};
+		BFAF367C26302C3F00F7D4CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFAF365D26302C3D00F7D4CF /* Memefy */;
+			targetProxy = BFAF367B26302C3F00F7D4CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BFAF368126302C3F00F7D4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFAF368226302C3F00F7D4CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFAF368426302C3F00F7D4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Memefy/Preview Content\"";
+				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Memefy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzhiphop.Memefy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFAF368526302C3F00F7D4CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Memefy/Preview Content\"";
+				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Memefy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzhiphop.Memefy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFAF368726302C3F00F7D4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				INFOPLIST_FILE = MemefyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzhiphop.MemefyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memefy.app/Memefy";
+			};
+			name = Debug;
+		};
+		BFAF368826302C3F00F7D4CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				INFOPLIST_FILE = MemefyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzhiphop.MemefyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memefy.app/Memefy";
+			};
+			name = Release;
+		};
+		BFAF368A26302C3F00F7D4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				INFOPLIST_FILE = MemefyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzhiphop.MemefyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Memefy;
+			};
+			name = Debug;
+		};
+		BFAF368B26302C3F00F7D4CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				INFOPLIST_FILE = MemefyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dzhiphop.MemefyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Memefy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFAF365926302C3D00F7D4CF /* Build configuration list for PBXProject "Memefy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAF368126302C3F00F7D4CF /* Debug */,
+				BFAF368226302C3F00F7D4CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFAF368326302C3F00F7D4CF /* Build configuration list for PBXNativeTarget "Memefy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAF368426302C3F00F7D4CF /* Debug */,
+				BFAF368526302C3F00F7D4CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFAF368626302C3F00F7D4CF /* Build configuration list for PBXNativeTarget "MemefyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAF368726302C3F00F7D4CF /* Debug */,
+				BFAF368826302C3F00F7D4CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFAF368926302C3F00F7D4CF /* Build configuration list for PBXNativeTarget "MemefyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAF368A26302C3F00F7D4CF /* Debug */,
+				BFAF368B26302C3F00F7D4CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFAF365626302C3D00F7D4CF /* Project object */;
+}
