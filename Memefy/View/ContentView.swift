@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationView {
             List (memeListViewModel.memesData, id: \.id) { meme in
                 NavigationLink (destination:
-                                    DetailView(imageURL: "\(meme.url)", imageTitle: meme.name),
+                                    DetailView(imageURL: "\(meme.url)", imageTitle: meme.name, boxCountNumber: meme.boxCount),
                 label: {
                     ZStack {
                         KFImage(URL(string: "\(meme.url)"))

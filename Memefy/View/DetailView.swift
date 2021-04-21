@@ -12,45 +12,53 @@ struct DetailView: View {
     
     var imageURL: String = "https://i.imgflip.com/30b1gx.jpg"
     var imageTitle: String = "Drake Meme"
-    @State var label1 = ""
-    @State var label2 = ""
+    var boxCountNumber = 2
+    @State var addedlabel: [String] = ["", "" , "", "" , "", ""]
     
     var body: some View {
         NavigationView {
             
-                VStack {
-                    ZStack {
-                        KFImage(URL(string: imageURL))
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        showTextOrNot(label: label1)
-                        showTextOrNot(label: label2)
+            VStack {
+                
+                KFImage(URL(string: imageURL))
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                
+                
+                Spacer()
+                
+                ForEach(0..<boxCountNumber) { index in
+                    ZStack{
+                        VStack {
+                            TextField("Label \(index + 1)", text: $addedlabel[index],onCommit: {
+                                print(addedlabel)
+                            })
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        }
+                        showTextOrNot(label: addedlabel[index])
+                            .onTapGesture {
+                                print(addedlabel[index])
+                            }
                     }
-                    
-                    Spacer()
-                    //TextField("abel 1", text: $label1)
-                    TextField("Label 1", text: $label1)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    TextField("Label 2", text: $label2)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Button(action: {
-                    }, label: {
-                        Text("Save Image")
-                    })
-                    
-                    
                 }
-                .padding()
-                .navigationBarTitle(imageTitle,displayMode: .inline)
+                
+                Button(action: {
+                }, label: {
+                    Text("Save Image")
+                })
+            }
+            .padding()
+            .navigationBarTitle(imageTitle,displayMode: .inline)
         }
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView()
+//    }
+//}
 
 extension DetailView {
     @ViewBuilder
@@ -59,12 +67,9 @@ extension DetailView {
             Text("")
         } else {
             Text("\(label)")
-                .bold()
                 .font(.title2)
+                .foregroundColor(Color.black)
                 .padding()
-                .background(Color.black)
-                .cornerRadius(15)
-                
         }
     }
 }
