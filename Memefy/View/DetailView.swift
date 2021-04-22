@@ -10,6 +10,8 @@ import Kingfisher
 
 struct DetailView: View {
     
+    //MARK: - Properties
+    
     var imageURL: String = "https://i.imgflip.com/30b1gx.jpg"
     var imageTitle: String = "Drake Meme"
     var boxCountNumber = 2
@@ -21,37 +23,67 @@ struct DetailView: View {
     @Environment(\.presentationMode) private var presentationMode
     @State var minY: CGFloat = 0.0
     @State var minX: CGFloat = 0.0
+    @State private var isShowingHud = false
+    @State private var isShowingFailed = false
+    
+    
+    //MARK: - Body
     
     var body: some View {
-        NavigationView {
-            
-            VStack {
-                
-                
-                memeImageView
-                
-                Spacer()
-                
-                ForEach(0..<boxCountNumber) { index in
-                    TextField("Label \(index + 1)", text: $addedlabel[index])
-                    .padding(.horizontal)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                }
-                
-                Button(action: {
-                    if let image = memeImageView.takeScreenshot(origin: CGPoint(x: 0, y: 151.0), size: CGSize(width: wholeScreenWidth, height: memeImageHeight)) {
-                        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                        presentationMode.wrappedValue.dismiss()
+        ZStack {
+            if isShowingHud {
+                HUDContainer(isShowingHud: $isShowingHud, isShowingFailed: $isShowingFailed) {
+                    HStack {
+                        SFSymbols.check
+                        Text("Photo Saved!")
                     }
-                }, label: {
-                    Text("Save Image")
-                })
+                }
+                .padding(.top)
+                .zIndex(1)
+            } else if isShowingFailed {
+                HUDContainer(isShowingHud: $isShowingHud, isShowingFailed: $isShowingFailed) {
+                    HStack {
+                        SFSymbols.fail
+                        Text("Fail saving photo!")
+                    }
+                }
+                .padding(.top)
+                .zIndex(1)
             }
-            .padding()
-            .navigationBarTitle(imageTitle,displayMode: .inline)
-//            .background(NavBarAccessor{ navBar in
-//                self.navBarHeight = navBar.bounds.height
-//            })
+            NavigationView {
+                VStack {
+                    memeImageView
+                    Spacer()
+                    
+                    ForEach(0..<boxCountNumber) { index in
+                        TextField("Label \(index + 1)", text: $addedlabel[index])
+                            .padding(.horizontal)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
+                    
+                    Button(action: {
+                        if let image = memeImageView.takeScreenshot(origin: CGPoint(x: 0, y: 151.0), size: CGSize(width: wholeScreenWidth, height: memeImageHeight)) {
+                            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                            isShowingHud = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
+                                presentationMode.wrappedValue.dismiss()
+                            }
+                            
+                            
+                        } else {
+                            isShowingFailed = true
+                        }
+                    }, label: {
+                        Text("Save Image")
+                    })
+                }
+                .padding()
+                .navigationBarTitle(imageTitle,displayMode: .inline)
+                
+                //            .background(NavBarAccessor{ navBar in
+                //                self.navBarHeight = navBar.bounds.height
+                //            })
+            }
         }
     }
     

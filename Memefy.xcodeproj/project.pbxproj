@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF567B9926315EDB0019FCF5 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF567B9826315EDB0019FCF5 /* SFSymbols.swift */; };
+		BF567B9E26315F870019FCF5 /* HUDContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF567B9D26315F870019FCF5 /* HUDContainer.swift */; };
 		BFAF366226302C3D00F7D4CF /* MemefyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF366126302C3D00F7D4CF /* MemefyApp.swift */; };
 		BFAF366426302C3D00F7D4CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF366326302C3D00F7D4CF /* ContentView.swift */; };
 		BFAF366626302C3F00F7D4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFAF366526302C3F00F7D4CF /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF567B9826315EDB0019FCF5 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		BF567B9D26315F870019FCF5 /* HUDContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDContainer.swift; sourceTree = "<group>"; };
 		BFAF365E26302C3D00F7D4CF /* Memefy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memefy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAF366126302C3D00F7D4CF /* MemefyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemefyApp.swift; sourceTree = "<group>"; };
 		BFAF366326302C3D00F7D4CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 			children = (
 				BFAF366326302C3D00F7D4CF /* ContentView.swift */,
 				BFAF36942630320F00F7D4CF /* DetailView.swift */,
+				BF567B9D26315F870019FCF5 /* HUDContainer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			children = (
 				BFAF36D526312EE700F7D4CF /* DraggableLabel.swift */,
 				BFAF36DA26312F6600F7D4CF /* NavBarAccessor.swift */,
+				BF567B9826315EDB0019FCF5 /* SFSymbols.swift */,
 				BFAF36DF26312F6A00F7D4CF /* View+.swift */,
 			);
 			path = Helperss;
@@ -346,6 +352,8 @@
 				BFAF36AF263045F200F7D4CF /* APIService.swift in Sources */,
 				BFAF366426302C3D00F7D4CF /* ContentView.swift in Sources */,
 				BFAF36E026312F6A00F7D4CF /* View+.swift in Sources */,
+				BF567B9E26315F870019FCF5 /* HUDContainer.swift in Sources */,
+				BF567B9926315EDB0019FCF5 /* SFSymbols.swift in Sources */,
 				BFAF36B42630461A00F7D4CF /* MemeListViewModel.swift in Sources */,
 				BFAF36DB26312F6600F7D4CF /* NavBarAccessor.swift in Sources */,
 				BFAF36952630320F00F7D4CF /* DetailView.swift in Sources */,
