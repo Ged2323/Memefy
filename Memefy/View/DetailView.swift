@@ -62,7 +62,7 @@ struct DetailView: View {
                     }
                     
                     Button(action: {
-                        if let image = memeImageView.takeScreenshot(origin: CGPoint(x: 0, y: 151.0), size: CGSize(width: wholeScreenWidth, height: memeImageHeight)) {
+                        if let image = memeImageView.takeScreenshot(origin: CGPoint(x: 0, y: 151.0), size: CGSize(width: wholeScreenWidth, height: memeImageHeight + 30)) {
                             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                             isShowingHud = true
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
@@ -90,13 +90,18 @@ struct DetailView: View {
     var memeImageView: some View {
         ZStack {
             GeometryReader { geo in
-                mainImage
-                    .onTapGesture {
-                        self.minY = geo.frame(in: .global).minY
-                        self.minX = geo.frame(in: .global).minX
-                        print("minX is \(self.minX)")
-                        print("minY is \(self.minY)")
-                    }
+                HStack {
+                    Spacer()
+                    mainImage
+                        .onTapGesture {
+                            self.minY = geo.frame(in: .global).minY
+                            self.minX = geo.frame(in: .global).minX
+                            print("minX is \(self.minX)")
+                            print("minY is \(self.minY)")
+                            
+                        }
+                    Spacer()
+                }
             }
             ForEach(addedlabel, id:\.self) { label in
                 DraggableLabel(text: label)
@@ -109,15 +114,16 @@ struct DetailView: View {
         KFImage(URL(string: imageURL))
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(height: memeImageHeight)
+            .frame(height: memeImageHeight + 30)
+        
     }
 }
 
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView()
-//    }
-//}
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(imageURL: "https://i.imgflip.com/1g8my4.jpg", imageTitle: "Two Buttons", boxCountNumber: 3)
+    }
+}
 
 //extension DetailView {
 //    @ViewBuilder
