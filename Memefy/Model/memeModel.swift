@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Test data
 struct MemeModel {
     var name: String
     var title: String

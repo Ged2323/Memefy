@@ -75,9 +75,6 @@ struct DetailView: View {
     
     var mainImage: some View {
         KFImage(URL(string: imageURL))
-            .placeholder {
-                ProgressView()
-            }
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(height: memeImageHeight)

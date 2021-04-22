@@ -1,9 +1,3 @@
-//
-//  DraggableLabel.swift
-//  MemefyDemo
-//
-//  Created by Alex Nagy on 20.03.2021.
-//
 
 import SwiftUI
 
