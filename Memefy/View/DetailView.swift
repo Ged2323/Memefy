@@ -21,6 +21,7 @@ struct DetailView: View {
     var memeImageHeight = UIScreen.main.bounds.height / 2.5
     //var saveAreaHeight = UIApplication.shared.windows[0].safeAreaInsets.top
     @Environment(\.presentationMode) private var presentationMode
+    
     @State var minY: CGFloat = 0.0
     @State var minX: CGFloat = 0.0
     @State private var isShowingHud = false
@@ -31,6 +32,39 @@ struct DetailView: View {
     
     var body: some View {
         ZStack {
+            
+            VStack {
+                memeImageView
+                Spacer()
+                
+                ForEach(0..<boxCountNumber) { index in
+                    TextField("Label \(index + 1)", text: $addedlabel[index])
+                        .padding(.horizontal)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                
+                Button(action: {
+                    if let image = memeImageView.takeScreenshot(origin: CGPoint(x: 0, y: 107.0), size: CGSize(width: wholeScreenWidth, height: memeImageHeight + 30)) {
+                        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                        isShowingHud = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                        
+                        
+                    } else {
+                        isShowingFailed = true
+                    }
+                }, label: {
+                    Text("Save Image")
+                })
+            }
+            .padding()
+            .navigationBarTitle(imageTitle,displayMode: .inline)
+            
+            //.background(NavBarAccessor{ navBar in
+            //  self.navBarHeight = navBar.bounds.height
+            //})
             if isShowingHud {
                 HUDContainer(isShowingHud: $isShowingHud, isShowingFailed: $isShowingFailed) {
                     HStack {
@@ -50,40 +84,7 @@ struct DetailView: View {
                 .padding(.top)
                 .zIndex(1)
             }
-            NavigationView {
-                VStack {
-                    memeImageView
-                    Spacer()
-                    
-                    ForEach(0..<boxCountNumber) { index in
-                        TextField("Label \(index + 1)", text: $addedlabel[index])
-                            .padding(.horizontal)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                    }
-                    
-                    Button(action: {
-                        if let image = memeImageView.takeScreenshot(origin: CGPoint(x: 0, y: 151.0), size: CGSize(width: wholeScreenWidth, height: memeImageHeight + 30)) {
-                            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                            isShowingHud = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
-                                presentationMode.wrappedValue.dismiss()
-                            }
-                            
-                            
-                        } else {
-                            isShowingFailed = true
-                        }
-                    }, label: {
-                        Text("Save Image")
-                    })
-                }
-                .padding()
-                .navigationBarTitle(imageTitle,displayMode: .inline)
-                
-                //            .background(NavBarAccessor{ navBar in
-                //                self.navBarHeight = navBar.bounds.height
-                //            })
-            }
+            
         }
     }
     

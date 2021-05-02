@@ -27,6 +27,7 @@
 		BFAF36D626312EE700F7D4CF /* DraggableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF36D526312EE700F7D4CF /* DraggableLabel.swift */; };
 		BFAF36DB26312F6600F7D4CF /* NavBarAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF36DA26312F6600F7D4CF /* NavBarAccessor.swift */; };
 		BFAF36E026312F6A00F7D4CF /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF36DF26312F6A00F7D4CF /* View+.swift */; };
+		BFCBDE10263E837900DE4E87 /* DetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCBDE0F263E837900DE4E87 /* DetailView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		BFAF36D526312EE700F7D4CF /* DraggableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableLabel.swift; sourceTree = "<group>"; };
 		BFAF36DA26312F6600F7D4CF /* NavBarAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarAccessor.swift; sourceTree = "<group>"; };
 		BFAF36DF26312F6A00F7D4CF /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		BFCBDE0F263E837900DE4E87 /* DetailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				BFAF366326302C3D00F7D4CF /* ContentView.swift */,
 				BFAF36942630320F00F7D4CF /* DetailView.swift */,
+				BFCBDE0F263E837900DE4E87 /* DetailView2.swift */,
 				BF567B9D26315F870019FCF5 /* HUDContainer.swift */,
 			);
 			path = View;
@@ -355,6 +358,7 @@
 				BF567B9E26315F870019FCF5 /* HUDContainer.swift in Sources */,
 				BF567B9926315EDB0019FCF5 /* SFSymbols.swift in Sources */,
 				BFAF36B42630461A00F7D4CF /* MemeListViewModel.swift in Sources */,
+				BFCBDE10263E837900DE4E87 /* DetailView2.swift in Sources */,
 				BFAF36DB26312F6600F7D4CF /* NavBarAccessor.swift in Sources */,
 				BFAF36952630320F00F7D4CF /* DetailView.swift in Sources */,
 				BFAF366226302C3D00F7D4CF /* MemefyApp.swift in Sources */,
@@ -519,7 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Memefy/Preview Content\"";
-				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				DEVELOPMENT_TEAM = N492VC6PS9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Memefy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -541,7 +545,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Memefy/Preview Content\"";
-				DEVELOPMENT_TEAM = 9T3DK8DFL5;
+				DEVELOPMENT_TEAM = N492VC6PS9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Memefy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
