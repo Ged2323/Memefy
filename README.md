@@ -13,18 +13,22 @@ SwiftUI, a meme creator app follow the courses by [Rebeloper](https://www.youtub
 
 # Screenshots
 
-<img src= "ReadmeSources/MemefySS.png" width = 50% height = 50%>
+<img src= "ReadmeSources/MemefySS.png" width = 40% height = 40%>
 
 # Features
 
 * Draggable Text
 
-<img src= "ReadmeSources/memefydraggabletext.gif" width = 50% height = 50%>
+<img src= "ReadmeSources/memefydraggabletext.gif" width = 40% height = 40%>
+
+* Image successfully saved notification with HUD
+
+<img src= "ReadmeSources/memefysaveani.gif" width = 40% height = 40%>
 
 * Take Screenshot and crop the image needed
 
 ### To-Do
-* Image successfully saved notification with HUD
+* Image successfully saved notification with HUD (done)
 
 
 
