@@ -13,7 +13,8 @@ class MemeListViewModel: ObservableObject{
     
     func fetchAPIdata() {
         let apiService = APIService.shared
-        apiService.getJSON(urlString: "\(API.get_memes)") { (results: Result<MemeAPIModel, APIService.APIError>) in
+        apiService.getJSON(urlString: "\(API.get_memes)") { [weak self] (results: Result<MemeAPIModel, APIService.APIError>) in
+            guard let self = self else { return }
             switch results {
             
             case .success(let memes):
